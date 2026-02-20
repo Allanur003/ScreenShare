@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
   
   # QR Code Scanner
-  qr_code_scanner: ^1.0.1
+  # qr_code_scanner: ^1.0.1
+  mobile_scanner: ^6.0.0
   
   # HTTP requests
   http: ^1.1.0
@@ -37,4 +38,5 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
+
   uses-material-design: true
