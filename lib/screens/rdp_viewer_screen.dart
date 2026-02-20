@@ -162,7 +162,7 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
                       setState(() {});
                     },
                     icon: const Icon(Icons.refresh),
-                    label: const Text('Yeniden Dene'),
+                    label: const Text('Täzeden synanyş'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF6366f1),
                       padding: const EdgeInsets.symmetric(
@@ -200,13 +200,13 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
               children: [
                 _buildModeButton(
                   icon: Icons.visibility,
-                  label: 'Görüntüle',
+                  label: 'Görkez',
                   mode: ViewMode.view,
                 ),
                 const SizedBox(width: 5),
                 _buildModeButton(
                   icon: Icons.mouse,
-                  label: 'Kontrol',
+                  label: 'Kantrol',
                   mode: ViewMode.mouse,
                 ),
               ],
@@ -284,7 +284,7 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
             ),
             const SizedBox(width: 6),
             Text(
-              quality == '30' ? 'Hızlı' : quality == '60' ? 'HD' : 'Pro',
+              quality == '30' ? 'Tiz' : quality == '60' ? 'HD' : 'Pro',
               style: const TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.w600,
@@ -338,7 +338,7 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
                   ),
                   child: const Center(
                     child: Text(
-                      '👆 Kaydırarak mouse hareket ettirin',
+                      '👆 Elin bilen syçany hereket etdirin',
                       style: TextStyle(
                         color: Color(0xFF94a3b8),
                         fontSize: 14,
@@ -494,7 +494,7 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
               ),
               const SizedBox(width: 8),
               Text(
-                isConnected ? 'Canlı Yayın' : 'Bağlantı Yok',
+                isConnected ? '' : 'Serwera baglanmady',
                 style: const TextStyle(
                   fontSize: 12,
                   color: Color(0xFF94a3b8),
@@ -506,4 +506,5 @@ class _RDPViewerScreenState extends State<RDPViewerScreen> {
       ),
     );
   }
+
 }
