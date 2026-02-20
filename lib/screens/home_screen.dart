@@ -161,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             colors: [Color(0xFF6366f1), Color(0xFFec4899)],
           ).createShader(bounds),
           child: const Text(
-            '⚡ AERO RDP',
+            '⚡ Screen Share',
             style: TextStyle(
               fontSize: 36,
               fontWeight: FontWeight.w900,
@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         ),
         const SizedBox(height: 8),
         const Text(
-          'Mobil Uzak Masaüstü',
+          'Mobil Uzak Iş stoly',
           style: TextStyle(
             fontSize: 16,
             color: Color(0xFF94a3b8),
@@ -187,8 +187,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       children: [
         _buildGlassButton(
           icon: Icons.qr_code_scanner,
-          title: 'QR Kod Tara',
-          subtitle: 'Sunucuya hızlı bağlan',
+          title: 'QR Kod okat',
+          subtitle: 'Serwera baglan',
           gradient: const LinearGradient(
             colors: [Color(0xFF6366f1), Color(0xFF818cf8)],
           ),
@@ -197,8 +197,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         const SizedBox(height: 16),
         _buildGlassButton(
           icon: Icons.edit,
-          title: 'Manuel Bağlan',
-          subtitle: 'IP adresi gir',
+          title: 'Manuel Baglan',
+          subtitle: 'IP adresyna gir',
           gradient: const LinearGradient(
             colors: [Color(0xFFec4899), Color(0xFFf472b6)],
           ),
@@ -303,7 +303,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Son Bağlantı',
+                  'Sonky Baglanan',
                   style: TextStyle(
                     fontSize: 12,
                     color: Color(0xFF94a3b8),
@@ -346,7 +346,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         ),
         SizedBox(height: 4),
         Text(
-          'Offline Çalışır • Güvenli Bağlantı',
+          'Offline Işleýär',
           style: TextStyle(
             fontSize: 10,
             color: Color(0xFF64748b),
@@ -366,7 +366,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        title: const Text('Manuel Bağlantı'),
+        title: const Text('Manuel Baglanmak'),
         content: TextField(
           controller: controller,
           decoration: const InputDecoration(
@@ -378,7 +378,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('İptal'),
+            child: const Text('Goýbolsun'),
           ),
           ElevatedButton(
             onPressed: () {
@@ -391,10 +391,11 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFF6366f1),
             ),
-            child: const Text('Bağlan'),
+            child: const Text('Baglan'),
           ),
         ],
       ),
     );
   }
+
 }
